@@ -80,20 +80,9 @@ class Blackjack():
             self.dealer.getHand(revealSecond)
             revealSecond = True #now the dealer can reveal the second card
 
-            # for player in self.playerLyst:
-            #     player.getHand()
-            #     hitOrStay = input(f"{player.name}, type h for hit or s for stay?: ")
-                
-            #     while(hitOrStay != 'h' and hitOrStay != 's'):
-            #         hitOrStay = input(f"{player.name}, type h for hit or any other key for stay: ")
 
-            #     while(hitOrStay == "h" and player.getHandAmount() < 21):
-            #         self.dealer.dealPlayers(player)
-            #         player.getHand()
-            #         hitOrStay = input(f"{player.name}, type h for hit or any other key for stay: ")
 
             self.round()
-
             #dealer deals second hadn
             self.dealer.getHand(revealSecond)
             #go until dealers hand reaches 17 - 21
